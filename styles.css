@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 95%;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(16, 18, 20, 0.5);
+}
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-top: 10px solid #101214;
+  border-bottom: 1px solid #101214;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.name-title-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  justify-content: center;
+}
+
+.name-title-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.name-title-container p {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.image-container {
+  padding-left: 24px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: auto;
+  border-radius: 360px;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.left-content {
+  padding-left: 70px;
+  padding-right: 12px;
+}
+
+.left-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  color: #73808d;
+  text-transform: uppercase;
+}
+
+.experience {
+  margin-top: 2px;
+  margin-bottom: 30px;
+  letter-spacing: 0.3px;
+  /* text-align: justify; */
+}
+
+.experience .role {
+  color: #101214;
+  font-size: 20px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+
+.experience .entreprise-name {
+  color: #101214;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.experience .duration {
+  color: #73808d;
+  font-size: 12px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.left-content ul {
+  padding-left: 35px;
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.education {
+  margin-top: 2px;
+  margin-bottom: 30px;
+  letter-spacing: 0.3px;
+  /* text-align: justify; */
+}
+
+.education .degree-major {
+  color: #101214;
+  font-size: 20px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+
+.education .school {
+  color: #101214;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.education .period {
+  color: #73808d;
+  font-size: 12px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.right-content {
+  padding-left: 12px;
+  padding-right: 48px;
+  color: #73808d;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.knowledge,
+.technologies,
+.other-skills,
+.languages,
+.social {
+  margin-top: 25px;
+}
+
+.right-content h3 {
+  padding-bottom: 5px;
+}
+
+.right-content ul {
+  list-style-type: none;
+  font-weight: 400;
+}
+
+.social a {
+  /* text-decoration: none; */
+  color: #73808d;
+}
+
+@media (max-width: 824px) {
+  .name-title-container {
+    padding-left: 48px;
+  }
+  .name-title-container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .name-title-container p {
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .right-content {
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .left-title {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .experience .role {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .experience .entreprise-name {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .experience .duration {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .education .degree-major {
+    font-size: 29px;
+    line-height: 29px;
+  }
+
+  .education .school {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .education .period {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .left-content ul {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .left-content {
+    padding-left: 48px;
+  }
+
+  .education .degree-major {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .education .school {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .education .period {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 645px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name-title-container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .name-title-container p {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .name-title-container {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  .image-container {
+    padding-left: 0px;
+  }
+
+  .profile-pic {
+    width: 80px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+  .left-content {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .right-content {
+    font-size: 13px;
+    line-height: 25px;
+    padding-left: 48px;
+    padding-right: 48px;
+    color: #000;
+  }
+
+  .social a {
+    /* text-decoration: none; */
+    color: #000;
+  }
+}
