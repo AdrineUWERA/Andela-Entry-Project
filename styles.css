@@ -184,7 +184,7 @@ main {
   color: #73808d;
 }
 
-@media (max-width: 824px) {
+@media (max-width: 874px) {
   .name-title-container {
     padding-left: 48px;
   }
